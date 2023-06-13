@@ -11,6 +11,7 @@ import java.awt.Color;
  *
  * @author aditya
  */
+
 public class NewFrame1 extends java.awt.Frame {
 
     /**

@@ -182,9 +182,7 @@ import javax.swing.JOptionPane;
    
    while(pn[i]!=p)
    {
-   i++;
-   
-   
+        i++;
    }
    viewlink l=new viewlink();
    dtm=pi+":"+mi;
@@ -202,11 +200,9 @@ import javax.swing.JOptionPane;
                 dater[j]=dater[j+1];
                 pn[j]=pn[j+1];
  
-  
   }
       
    rear--;
-   
    
    }
    public  String[] find(int p)

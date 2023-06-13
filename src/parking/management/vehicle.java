@@ -321,6 +321,8 @@ public class vehicle extends java.awt.Frame {
         
        vacant.update(p);
         priority.enqueue(nam,n, emaili, etime, dtime, pay, ammoun,dater,p);
+        SaveFile.saveFile(nam, n, emaili, etime, dtime, pay, ammoun, dater, p);
+        
         
         if(i==0){
           

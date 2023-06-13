@@ -290,24 +290,24 @@ String []fine;
 
     private void confirmdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmdActionPerformed
         // TODO add your handling code here:
-              if(s[0]!="1")
+        if(s[0]!="1")
         {
-       priority.deletespecific(p);
-        statusd.setText("AMMOUNT PAID");
+                priority.deletespecific(p);
+                statusd.setText("AMMOUNT PAID");
         }
       
-            if(s[0]=="1")
+        if(s[0]=="1")
         {
-         finelink fl=new finelink();
-        fl.deletespecific(p);
- statusd.setText("FINE+AMMOUNT PAID ");
+            finelink fl=new finelink();
+            fl.deletespecific(p);
+            statusd.setText("FINE+AMMOUNT PAID ");
         }
-  if(fine[0]=="2")
-                {
-                
-                 statusd.setText("ALREADY EMPTY");
-                }
-
+        
+        if(fine[0]=="2")
+        {
+            statusd.setText("ALREADY EMPTY");
+        }
+        
         vacant.empupdate(p);
     }//GEN-LAST:event_confirmdActionPerformed
 

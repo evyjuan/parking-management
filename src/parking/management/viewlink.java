@@ -21,10 +21,10 @@ public class viewlink extends java.awt.Frame {
   
    public static void insert( String nam, String n,String emaili, String etime,String dtime,String  pay, int ammoun,String dater, int p)
    {
-   node node =new node();
-   node.name=nam;
-            node.no=n;
-             node.emailid=emaili;
+        node node =new node();
+        node.name=nam;
+        node.no=n;
+        node.emailid=emaili;
 
               node.etime=etime;
 
@@ -33,10 +33,9 @@ public class viewlink extends java.awt.Frame {
                 node.payt=pay;
 
                  node.ammount=ammoun;
- node.date=dater;
-
-  node.pn=p;
-  node.next=null;
+        node.date=dater;
+         node.pn=p;
+         node.next=null;
   if(header==null)
   {
   header=node;
