@@ -1,5 +1,4 @@
-#PARKING SPACE SYSTEM
-#
+# Parking Lot
 import os
 import time
 
@@ -349,9 +348,9 @@ def command_handler(command):
     elif command == "R":
         display_lot()
         input("Current Parking Rates:\n"
-              "Cars - $3.50/hour\n"
-              "Trucks - $4.50/hour\n"
-              "Motorcycles - $2.00/hour\n"
+              "Cars - PHP 100/hour\n"
+              "Trucks - PHP 200/hour\n"
+              "Motorcycles - PHP 50/hour\n"
               "\nPress Enter to return to menu")
 
     # return if the quit command is given
