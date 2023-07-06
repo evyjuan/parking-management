@@ -449,6 +449,11 @@ def command_handler(command):
             new_key = input("Enter new key: ")
             new_key = new_key.encode()
             if new_key != KEY:
+                try:
+                    with open("en_key.txt", 'wb') as r_key:
+                        r_key.write(new_key)
+                except IOError as e:
+                    print("ERROR:", e)
                 break
         KEY = new_key
 
@@ -488,17 +493,18 @@ def temp_file():
         for line in lines:
             tokens = line.strip().split(",")
 
-            if not have_key:
+            if have_key:
                 v_type = decrypt(tokens[0])
                 plate = decrypt(tokens[1])
-                entry_time = decrypt(tokens[2])
+                entry_time = float(decrypt(tokens[2]))
                 rate = decrypt(tokens[3])
                 row = decrypt(tokens[4])
                 space = decrypt(tokens[5])
+
             else:
                 v_type = tokens[0]
                 plate = tokens[1]
-                entry_time = tokens[2]
+                entry_time = float(tokens[2])
                 rate = tokens[3]
                 row = tokens[4]
                 space = tokens[5]
