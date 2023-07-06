@@ -460,8 +460,8 @@ def command_handler(command):
 
                 v_type = encrypt(tokens[0])
                 plate = encrypt(tokens[1])
-                entry_time = encrypt(tokens[2])
-                rate = encrypt(tokens[3])
+                entry_time = encrypt(str(tokens[2]))
+                rate = encrypt(str(tokens[3]))
                 row = encrypt(tokens[4])
                 space = encrypt(tokens[5])
 
