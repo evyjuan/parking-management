@@ -205,11 +205,11 @@ def fare_calculation(vehicle):
 
     # calculate fare based on vehicle type
     if vehicle.get_type() == 1:
-        rate = hours * 3.50
+        rate = hours * 100
     elif vehicle.get_type() == 2:
-        rate = hours * 4.50
+        rate = hours * 200
     else:
-        rate = hours * 2.00
+        rate = hours * 50
 
     ret = "Vehicle Removed!\n" \
           "Your Total for " + "{:.2f}".format(hours) + " hours is $" + "{:.2f}".format(rate)
